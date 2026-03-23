@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pias Livs | Din personliga närbutik i Larsmo & Pedersöre</title>
+    <meta name="description" content="Välkommen till Pias Livs – din lokala butik i Larsmo och Pedersöre. Färska råvaror, personlig service och allt du behöver för vardagen. Se våra öppettider här!">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@500;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2D5A27; /* Skogsgrön - trygghet & färskhet */
+            --secondary: #F4A261; /* Varm orange - välkomnande & energi */
+            --text: #333;
+            --light: #F9F9F9;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; font-weight: 800; }
+        
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        .btn { display: inline-block; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; cursor: pointer; border: none; }
+        .btn-primary { background: var(--secondary); color: white; font-size: 1.1rem; }
+        .btn-primary:hover { background: #e78e45; transform: translateY(-2px); }
+
+        /* Navigation */
+        nav { background: var(--white); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; color: var(--primary); font-weight: 800; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('store-front.jpg') center/cover; padding: 100px 0; color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* Sektioner */
+        section { padding: 80px 0; }
+        .bg-light { background: var(--light); }
+        .text-center { text-align: center; }
+        h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 1.5rem; }
+
+        /* Grid för Produkter & Fördelar */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .card i { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem; }
+
+        /* Erbjudanden */
+        .offer-tag { background: #e63946; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; display: inline-block; margin-bottom: 10px; }
+
+        /* Kontakt & Öppettider */
+        .info-wrapper { display: flex; flex-wrap: wrap; gap: 4rem; justify-content: space-between; }
+        .info-box { flex: 1; min-width: 300px; }
+        .map-placeholder { background: #ddd; height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-top: 20px; }
+
+        /* Recensioner */
+        .testimonial { font-style: italic; border-left: 4px solid var(--secondary); padding-left: 20px; margin: 20px 0; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; padding: 40px 0; text-align: center; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            section { padding: 50px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">PIAS LIVS</div>
+            <div class="nav-links">
+                <a href="#erbjudanden" style="text-decoration:none; color:var(--text); font-weight:bold;">Erbjudanden</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Din lokala matbutik i hjärtat av Larsmo</h1>
+            <p>Vi kombinerar personlig service med ett noga utvalt sortiment av färskvaror och lokala produkter. Välkommen hem till Pias Livs!</p>
+            <a href="#hitta-hit" class="btn btn-primary">Hitta till butiken</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2>Mer än bara en butik</h2>
+                <p>Pias Livs har tjänat lokalsamhället i Pedersöre och Larsmo i generationer. För oss handlar e-handel och handel inte bara om varor, utan om att förenkla din vardag. Här möts du alltid av ett leende, doften av nybakat bröd och de färskaste råvarorna från våra lokala bönder.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Allt du behöver för vardagen</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Färska råvaror</h3>
+                    <p>Frukt, grönt och lokalt kött av högsta kvalitet.</p>
+                </div>
+                <div class="card">
+                    <h3>Lokalt producerat</h3>
+                    <p>Smaker från trakten – från honung till hantverksbröd.</p>
+                </div>
+                <div class="card">
+                    <h3>Snabba inköp</h3>
+                    <p>Snabba påfyllningar av mejerivaror och torrvaror.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center">Varför handla hos Pias?</h2>
+            <div class="grid">
+                <div class="card">
+                    <strong>Nära & Bekvämt</strong>
+                    <p>Spara tid och bensin genom att handla i din hemby.</p>
+                </div>
+                <div class="card">
+                    <strong>Personlig Service</strong>
+                    <p>Vi känner våra kunder och hjälper dig gärna hitta rätt.</p>
+                </div>
+                <div class="card">
+                    <strong>Stöd Lokalt</strong>
+                    <p>Varje köp bidrar till ett levande lokalsamhälle.</p>
+                </div>
+                <div class="card">
+                    <strong>Alltid Färskt</strong>
+                    <p>Vi prioriterar hållbarhet och korta transporter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="erbjudanden" class="bg-light">
+        <div class="container text-center">
+            <h2>Veckans klipp</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="offer-tag">Lokalt tips!</span>
+                    <h3>Larsmo-limpa</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: #e63946;">2,50 €</p>
+                    <p>Nybakat från det lokala bageriet.</p>
+                </div>
+                <div class="card">
+                    <span class="offer-tag">Kaffe-deal</span>
+                    <h3>Juhla Mokka</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: #e63946;">3 pkt / 12 €</p>
+                    <p>Max 1 köp per hushåll.</p>
+                </div>
+            </div>
+            <br><br>
+            <a href="#" class="btn" style="border: 2px solid var(--primary); color: var(--primary);">Se alla erbjudanden i butik</a>
+        </div>
+    </section>
+
+    <section id="hitta-hit">
+        <div class="container">
+            <div class="info-wrapper">
+                <div class="info-box">
+                    <h2>Hitta till oss</h2>
+                    <p><strong>Adress:</strong> Butiksvägen 12, 66900 Larsmo</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+35800000000" style="color: var(--primary);">06-123 4567</a></p>
+                    <br>
+                    <h3>Öppettider</h3>
+                    <p>Måndag – Fredag: 07:00 – 21:00</p>
+                    <p>Lördag: 09:00 – 18:00</p>
+                    <p>Söndag: 12:00 – 18:00</p>
+                </div>
+                <div class="info-box">
+                    <div class="map-placeholder">
+                        <p>[Här bäddas Google Maps in]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Vad våra grannar säger</h2>
+            <div class="grid">
+                <div class="testimonial">
+                    <p>"Bästa servicen i Pedersöre! Man känner sig alltid välkommen och de har allt man behöver för en snabb middag."</p>
+                    <strong>– Anders G.</strong>
+                </div>
+                <div class="testimonial">
+                    <p>"Älskar deras fokus på lokala råvaror. Brödet är alltid magiskt!"</p>
+                    <strong>– Maria S.</strong>
+                </div>
+                <div class="testimonial">
+                    <p>"Perfekt för oss barnfamiljer. Snabbt in och ut, och alltid bra ordning."</p>
+                    <strong>– Johan L.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--secondary); color: white; text-align: center;">
+        <div class="container">
+            <h2>Vi ses vid kassan!</h2>
+            <p>Har du frågor om vårt sortiment? Ring oss eller kom förbi.</p>
+            <br>
+            <a href="tel:+35800000000" class="btn" style="background: var(--primary); color: white;">Ring butiken nu</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pias Livs Ab. All rights reserved. <br> Din trygga närbutik i Larsmo & Pedersöre.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
